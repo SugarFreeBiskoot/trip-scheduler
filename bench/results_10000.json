@@ -1,0 +1,14 @@
+{
+  "jobs": 10000,
+  "window_s": 60.0,
+  "nodes": 3,
+  "tenants": 20,
+  "work_ms": 5,
+  "done": 10000,
+  "effects": 10000,
+  "fire_lag_p50_s": 0.098,
+  "fire_lag_p99_s": 0.199,
+  "fire_lag_max_s": 0.269,
+  "throughput_jobs_per_s": 166.7,
+  "machine": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39 | 2 CPUs | Python 3.13.18"
+}
