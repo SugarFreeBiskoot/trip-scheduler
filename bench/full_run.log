@@ -25,3 +25,52 @@ inserted 100000 jobs due over 600s on 3 nodes
   done 36987/100000
   done 38654/100000
   done 40314/100000
+  done 41998/100000
+  done 43652/100000
+  done 45317/100000
+  done 46985/100000
+  done 48663/100000
+  done 50329/100000
+  done 51996/100000
+  done 53665/100000
+  done 55330/100000
+  done 56994/100000
+  done 58656/100000
+  done 60333/100000
+  done 62005/100000
+  done 63667/100000
+  done 65323/100000
+  done 67006/100000
+  done 68660/100000
+  done 70332/100000
+  done 71994/100000
+  done 73660/100000
+  done 75340/100000
+  done 77002/100000
+  done 78670/100000
+  done 80344/100000
+  done 82011/100000
+  done 83672/100000
+  done 85336/100000
+  done 87009/100000
+  done 88679/100000
+  done 90346/100000
+  done 92020/100000
+  done 93679/100000
+  done 95349/100000
+  done 97015/100000
+  done 98682/100000
+{
+  "jobs": 100000,
+  "window_s": 600.0,
+  "nodes": 3,
+  "tenants": 20,
+  "work_ms": 5,
+  "done": 100000,
+  "effects": 100000,
+  "fire_lag_p50_s": 0.104,
+  "fire_lag_p99_s": 6.649,
+  "fire_lag_max_s": 8.859,
+  "throughput_jobs_per_s": 166.7,
+  "machine": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39 | 2 CPUs | Python 3.13.18"
+}
