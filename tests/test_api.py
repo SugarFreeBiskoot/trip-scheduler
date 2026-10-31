@@ -49,6 +49,8 @@ def test_validation_errors_do_not_echo_input(client):
     r = client.post("/jobs", json={"job_id": "x", "job_type": "send_alert", "payload": {"phone": "+919999999999"},
                                    "max_runtime": -1}, headers=ACME)
     assert r.status_code == 422 and "9999" not in r.text
+    no_employee = roster_job() | {"payload": {}}
+    assert client.post("/jobs", json=no_employee, headers=ACME).status_code == 422
 
 
 def test_duplicate_job_is_409(client):

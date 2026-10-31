@@ -114,6 +114,8 @@ def create_app(store: Optional[Store] = None) -> FastAPI:
             raise ApiError(422, "invalid_request", "Invalid cron expression")
         if body.job_type not in HANDLERS:
             raise ApiError(422, "invalid_request", f"Unknown job_type; use one of {sorted(HANDLERS)}")
+        if body.job_type == "send_alert" and "employee_id" not in body.payload:
+            raise ApiError(422, "invalid_request", "send_alert needs payload.employee_id")
         try:
             ZoneInfo(body.tz)
         except Exception:
